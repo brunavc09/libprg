@@ -2,6 +2,7 @@
 #include <stdlib.h>
 #include <stdio.h>
 
+
 ListaLinear* criar_lista(void) {
     ListaLinear *lista=malloc(sizeof(ListaLinear));
     lista->inicio=NULL;
