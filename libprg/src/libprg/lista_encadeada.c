@@ -9,7 +9,6 @@ ListaEncadeada *lenc_criar(void) {
     l->tamanho = 0;
     return l;
 }
-
 int lenc_inserir(ListaEncadeada *l, int valor) {
     if (l == NULL) return -1;
     NoLE *novo = malloc(sizeof(NoLE));
