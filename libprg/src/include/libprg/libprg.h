@@ -24,7 +24,7 @@ void remover_inicio_lista(ListaLinear *lista);
 void imprimir_lista(ListaLinear *lista);
 void destruir_lista(ListaLinear *lista);
 
-libprg.h: // |-- Lista Encadeada --|
+// |-- Lista Encadeada --|
 
 typedef struct NoLE {
     int valor;
