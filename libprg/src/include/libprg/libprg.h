@@ -24,5 +24,24 @@ void remover_inicio_lista(ListaLinear *lista);
 void imprimir_lista(ListaLinear *lista);
 void destruir_lista(ListaLinear *lista);
 
+libprg.h: // |-- Lista Encadeada --|
+
+typedef struct NoLE {
+    int valor;
+    struct NoLE *proximo;
+} NoLE;
+
+typedef struct {
+    NoLE *inicio;
+    int tamanho;
+} ListaEncadeada;
+
+ListaEncadeada *lenc_criar(void);
+int  lenc_inserir(ListaEncadeada *l, int valor);
+int  lenc_remover(ListaEncadeada *l, int *valor);
+int  lenc_primeiro(const ListaEncadeada *l, int *valor);
+int  lenc_tamanho(const ListaEncadeada *l);
+void lenc_imprimir(const ListaEncadeada *l);
+void lenc_destruir(ListaEncadeada *l);
 
 #endif //LABORATORIO_LIBPRG_H
