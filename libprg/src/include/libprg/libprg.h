@@ -44,5 +44,4 @@ int  lenc_tamanho(const ListaEncadeada *l);
 void lenc_imprimir(const ListaEncadeada *l);
 void lenc_destruir(ListaEncadeada *l);
 
-
 #endif //LABORATORIO_LIBPRG_H
